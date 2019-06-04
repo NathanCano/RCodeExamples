@@ -1,0 +1,11 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+x<- c(17, 13, 12, 15, 16, 14, 16, 16, 18, 19)
+y<- c(94, 73, 59, 80, 93, 85, 66, 79, 77, 91)
+
+#install.packages("ggpubr")
+library(ggpubr)
+cor(x,y, method="pearson")
+cor.test(x,y, method=c("pearson"))
