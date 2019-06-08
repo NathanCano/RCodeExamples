@@ -1,0 +1,7 @@
+water<- c(29,30,31,31,29)
+sugar<-c(28,29,27,30,29)
+coffee<- c(25,28,29,27,29)
+datcomb<- c(water, sugar, coffee)
+groups<- factor(rep(letters[1:3], each =5))
+fit<-lm(formula=datcomb~groups)
+anova(fit)
