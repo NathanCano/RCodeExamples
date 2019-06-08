@@ -1,11 +1,5 @@
----
-title: "ChiSquare"
-output: html_document
----
-
 DS <- matrix(c(18,42,7,33),ncol=2)
 DS
 dimnames(DS)<- list(sex = c("female","male"), observation = c("L","NL"))
 print(DS)
 print(Xsq<- chisq.test(DS, correct=F))
-
